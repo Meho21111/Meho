@@ -1,38 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head><link rel="stylesheet" href="style.css">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-            <ul>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Интернет-магазин</h1>
+        </div>
+        <nav>
+            <ul>
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="products.html">Товары</a></li>
                 <li><a href="about.html">О нас</a></li>
                 <li><a href="contact.html">Контакты</a></li>
             </ul>
         </nav>
+        <div class="cart">
+            <a href="cart.html">
+                <i class="fa fa-shopping-cart"></i> Корзина (<span id="cart-count">0</span>)
+            </a>
+        </div>
     </header>
 
     <main>
         <section id="products">
             <h2>Наши товары</h2>
-            <div class="product">
-                <img src="" alt="Товар 1">
-                <h3>Товар 1</h3>
-                <p>Цена: 6000 руб.</p>
-                <button>Купить</button>
-            </div>
-            <div class="product">
-                <img src="" alt="Товар 2">
-                <h3>Товар 2</h3>
-                <p>Цена: 7000 руб.</p>
-                <button>Купить</button>
-            </div>
-            <div class="product">
-                <img src="" alt="Товар 3">
-                <h3>Товар 3</h3>
-                <p>Цена: 12000 руб.</p>
-                <button>Купить</button>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="" alt="Товар 1">
+                    <h3>Гидромеханическая трансмиссия(ГМП)4WG-180 4644 004 294</h3>
+                    <p>Цена: 740000 руб.</p>
+                    <button class="add-to-cart" data-id="1" data-name="Товар 1" data-price="6000">Купить</button>
+                </div>
+                <div class="product">
+                    <img src="" alt="Товар 2">
+                    <h3>Гидромеханическая трансмиссия(ГМП) Коробка передач в сборе 4WG-180 4644 004 235</h3>
+                    <p>Цена: 840000 руб.</p>
+                    <button class="add-to-cart" data-id="2" data-name="Товар 2" data-price="7000">Купить</button>
+                </div>
+                <div class="product">
+                    <img src="" alt="Товар 3">
+                    <h3>Гидромеханическая трансмиссия(ГМП) Коробка передач в сборе 6WG-180</h3>
+                    <p>Цена: 960000 руб.</p>
+                    <button class="add-to-cart" data-id="3" data-name="Товар 3" data-price="12000">Купить</button>
+                </div>
             </div>
         </section>
     </main>
+
+    <footer>
+        <p>© 2023 Интернет-магазин</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
