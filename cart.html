@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Интернет-магазин</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="products.html">Товары</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <a href="cart.html">
+                <i class="fa fa-shopping-cart"></i> Корзина (<span id="cart-count">0</span>)
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="cart">
+            <h2>Корзина</h2>
+            <div id="cart-items">
+                <!-- Здесь будут отображаться товары в корзине -->
+            </div>
+            <p>Итого: <span id="cart-total">0</span> руб.</p>
+            <button id="checkout-button">Оформить заказ</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Интернет-магазин</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
